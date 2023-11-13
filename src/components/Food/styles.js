@@ -1,6 +1,13 @@
+/** @format */
+
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface ContainerProps {
+  available: boolean;
+}
+
+// eslint-disable-next-line no-mixed-operators
+export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
 
